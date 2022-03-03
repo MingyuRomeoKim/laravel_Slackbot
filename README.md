@@ -17,6 +17,20 @@
 
 ---
 
+# How To Use
 
+* Component Object Model 형식으로 제작되었기 때문에 실행 메서드를 호출함으로 실행 가능.
+
+* Input Example
+```
+$ php artisan tinker
+Psy Shell v0.11.2 (PHP 8.0.16 — cli) by Justin Hileman
+>>> App\Models\SlackComponentObjectModel::async(SlackComponentObjectModel::CHANNEL3, 'MyNameIsMingyu!!!!! ');
+=> null
+>>> App\Models\SlackComponentObjectModel::async(SlackComponentObjectModel::CHANNEL3, 'this is channel 3@@@!@#!@#!#');              
+=> null
+```
+* Output Example
+<img width="1078" alt="스크린샷 2022-03-02 오후 6 10 29" src="https://user-images.githubusercontent.com/24973648/156474161-59dc3ec3-b124-45f8-9818-7d9ca97fc743.png">
 
 
